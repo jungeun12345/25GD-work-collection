@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"> <title>Introduce ME!</title>
+        <link href="https://fonts.googleapis.com/css2?family=Workbench&display=swap" rel="stylesheet">
+        <style>
+            body {
+                background-color: #5e91fe;
+                font-family: "Workbench", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+                font-variation-settings:
+                "BLED" 0,
+                "SCAN" 0;
+            }
+            nav {
+                position: fixed;
+                display: flex;
+                align-items: center;
+                padding: 10px 30px;
+                top:0;
+            }
+            nav .logo img {
+                width: 70px; 
+                height: auto; 
+                margin-right: 370px; 
+            }
+            .logo:hover{
+                transform: scale(0.95);
+                transition:0.5s;
+            }
+
+            nav ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 25px 0px;
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+            }
+
+            nav li a {
+                text-decoration: none;
+                color: aliceblue;
+                font-size: 18px;
+                padding: 10px;
+            }
+
+            .menu_2:hover{color:#50d03a}
+            .menu_3:hover{color:#e7230d}
+            .menu_4:hover{color:#00b7ff}
+            .menu_5:hover{color:#fccd0e}
+
+            .main {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 90vh;
+            }
+            .main-title img {
+                width: 380px;
+                height: auto;
+            }
+            .main p {
+                margin-top: 30px; 
+                text-align: center;
+                line-height: 1.6;
+            }
+
+            .block {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: auto;
+                z-index: -1; 
+            }
+
+        </style>
+    </head>
+
+    
+    <body>
+        <nav>
+            <a href="1.index.html" class="logo">
+                <img src="images/Introduce me!.svg" alt="Home" />
+            </a>
+          <ul>
+            <li><a class="menu_2" href="2.profile.html">Lv.1 Profile</a></li>
+            <li><a class="menu_3" href="3.characteristic.html">Lv.2 Characteristic</a></li>
+            <li><a class="menu_4" href="4.playlist.html">Lv.3 Playlist</a></li>
+            <li><a class="menu_5" href="5.letter.html">Lv.4 Letter</a></li>
+          </ul>
+        </nav>
+        <div class="main">
+            <div class="main-title">
+                <img src="images/Introduce me!.svg" alt="Main Title" />
+            </div>
+            <p>Hello, welcome to my page! I will introduce myself to you today. Let's go through each step of introducing myself well!!<br>Click on Lv.1 at the top to challenge.</p>
+        </div>
+
+        <img src="images/block.png" alt="block" class="block"/>
+      </body>
+</html>
