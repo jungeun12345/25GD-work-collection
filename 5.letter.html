@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"><title>playlist</title>
+        <link href="https://fonts.googleapis.com/css2?family=Workbench&display=swap" rel="stylesheet">
+        <style>
+            body {
+                background-color: #5e91fe; text-align: center;
+                font-family: "Workbench", monospace;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+                font-variation-settings:
+                "BLED" 0,
+                "SCAN" 0;
+            }
+            nav {
+                position: fixed;
+                display: flex;
+                align-items: center;
+                padding: 10px 30px;
+                background-color: #5e91fe;
+                width: 100%;
+                top:0;
+            }
+            nav .logo img {
+                width: 70px; 
+                height: auto; 
+                margin-right: 370px; 
+            }
+            .logo:hover{
+                transform: scale(0.95);
+                transition:0.5s;
+            }
+
+            nav ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 25px 0px;
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+            }
+
+            nav li a {
+                text-decoration: none;
+                color: aliceblue;
+                font-size: 18px;
+                padding: 10px;
+            }
+
+            .menu_2:hover{color:#50d03a}
+            .menu_3:hover{color:#e7230d}
+            .menu_4:hover{color:#00b7ff}
+            .menu_5:hover{color:#fccd0e}
+            
+            .block {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: auto;
+                z-index: -1; 
+            }
+             h1 {text-align: center; margin-top: 130px;}
+
+             form{
+                background-color: antiquewhite; border-style:solid; border-color: black; border-width: 2px;
+                width: 900px; margin-left: 265px;
+                text-align: left; padding:50px
+             }
+            .letter{height: 300px; width: 450px;} 
+            .review{height:180px; width:450px;}
+            .submit{background-color: #cf4e0c;}
+            .submit:hover{background-color: #5e91fe;}
+            
+        </style>
+    </head>
+
+    <body>
+
+        <nav>
+            <a href="1.index.html" class="logo">
+                <img src="images/Introduce me!.svg" alt="Home" />
+            </a>
+          <ul>
+            <li><a class="menu_2" href="2.profile.html">Lv.1 Profile</a></li>
+            <li><a class="menu_3" href="3.characteristic.html">Lv.2 Characteristic</a></li>
+            <li><a class="menu_4" href="4.playlist.html">Lv.3 Playlist</a></li>
+            <li><a class="menu_5" href="5.letter.html">Lv.4 Letter</a></li>
+          </ul>
+        </nav>
+        <img src="images/block.png" alt="block" class="block"/>
+
+        <br> <h1>Letter</h1> <br><br><hr><br><br><br>
+
+         <form action="links/letter_submit.html">
+            <p>마지막 단계! 저에게 하고 싶은 말이나 남기고 싶은 메시지가 있다면 작성해주세요~!!</p><br><br><br>
+            <p> 
+                1. 학년 선택:
+                <select name= "학년">
+                    <option value="1학년!">1학년!</option>
+                    <option value="2학년!">2학년!</option>
+                    <option value="3학년!">3학년!</option>
+                    <option value="4학년!">4학년!</option>
+                    <option value="그 이상">그 이상</option>
+                </select>
+            </p>
+            <br>
+            <p>
+                2. 이름: <br>
+                <input type="text" name="이름" value="이름을 작성해주세요-!! (누르면 작성할 수 있어요)" size="50">
+            </p>
+            <br>
+            <p>
+                3. 저와의 관계: <br>
+                <input type="checkbox" name="관계" value="체크" checked>체크해서 알려주세요!<br>
+                <input type="checkbox" name="관계" value="가족">가족<br>
+                <input type="checkbox" name="관계" value="친구">친구<br>
+                <input type="checkbox" name="관계" value="새새">새새<br>
+                <input type="checkbox" name="관계" value="외부인">외부인<br>
+                기타: <input type="text" name="관계" value="">
+            </p> 
+            <br>
+            <p>
+                4. 제게 하고 싶은 말이 있다면 남겨주세요. <br>
+                <input type="text" class="letter" name="하고 싶은 말" value="누르면 작성할 수 있어요" size="50">
+            </p>
+            <br>
+            <p>
+                5. 저의 웹사이트 후기를 남겨주세요. <br>
+                <input type="text" class="review" name="리뷰" value="소중한 한마디가 힘이 됩니다!" size="50">
+            </p>
+            <br>
+            <p>
+                오늘의 날짜를 입력해주세요. <br>
+                <input type="date" name="날짜">
+            </p>
+            <br>
+            <p>
+                이벤트에 참여하시려면 전화번호를 남겨주세요. <br>
+                <input type="tel" name="event tel" value="">
+            </p>
+            <br><br><br>
+            편지 남겨주셔서 진심으로 감사드립니다.<br>
+            
+            <br><br>
+            <input type="submit" class="submit" value="Submit">
+            <br><br>
+
+        </form>
+
+    
+
+    </body>
+</html>

@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"><title>profile</title>
+        <link href="https://fonts.googleapis.com/css2?family=Workbench&display=swap" rel="stylesheet">
+        <style>
+            body {
+                background-color: #5e91fe;
+                font-family: "Workbench", monospace;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+                font-variation-settings:
+                "BLED" 0,
+                "SCAN" 0;
+            }
+            nav {
+                position: fixed;
+                display: flex;
+                align-items: center;
+                padding: 10px 30px;
+                background-color: #5e91fe;
+                width: 100%;
+                top:0;
+            }
+            nav .logo img {
+                width: 70px; 
+                height: auto; 
+                margin-right: 370px; 
+            }
+            .logo:hover{
+                transform: scale(0.95);
+                transition:0.5s;
+            }
+
+            nav ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 25px 0px;
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+            }
+
+            nav li a {
+                text-decoration: none;
+                color: aliceblue;
+                font-size: 18px;
+                padding: 10px;
+            }
+
+            .menu_2:hover{color:#50d03a}
+            .menu_3:hover{color:#e7230d}
+            .menu_4:hover{color:#00b7ff}
+            .menu_5:hover{color:#fccd0e}
+            
+            .block {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: auto;
+                z-index: -1; 
+            }
+
+            h1 {text-align: center; margin-top: 130px;}
+
+            table {
+                border: 2px solid black;
+                border-collapse: collapse;
+                background-color: #f5efe6;
+                margin:auto
+                }
+
+            td{
+                border: 1.5px dotted black;
+                text-align: center;
+                padding: 15px;
+                font-size: 18px;
+                font-weight: 600;
+            }
+
+            td:hover{background-color: aquamarine;}
+
+        </style>
+
+
+
+    </head>
+
+    <body>
+         <nav>
+            <a href="1.index.html" class="logo">
+                <img src="images/Introduce me!.svg" alt="Home" />
+            </a>
+          <ul>
+            <li><a class="menu_2" href="2.profile.html">Lv.1 Profile</a></li>
+            <li><a class="menu_3" href="3.characteristic.html">Lv.2 Characteristic</a></li>
+            <li><a class="menu_4" href="4.playlist.html">Lv.3 Playlist</a></li>
+            <li><a class="menu_5" href="5.letter.html">Lv.4 Letter</a></li>
+          </ul>
+        </nav>
+        <img src="images/block.png" alt="block" class="block"/>
+
+        <br> <h1>Profile</h1> <br><br>
+
+        <table>
+            <tr>
+                <td rowspan="2"><img src="Images/introduce.jpg" width="300"></td>
+                <td>이정은</td>
+                <td>Birth: 2004.08.16</td>                
+            </tr>
+
+            <tr>
+                <!--2행 1열은 1행 1열과 병합했으므로 생성하지 않습니다. -->
+                <td colspan="2"> <a href="https://www.instagram.com/jungeunleeje/">Instagram Profile</a> </td>
+                <!--2행 3열은 2행 2열과 병하바했으므로 생성하지 않습니다. -->                
+            </tr>
+
+            <tr>
+                <td colspan="3">
+                    
+                <video height="500" width="800" controls autoplay>
+                    <source src="Images/introduce.mp4" type="video/mp4">
+                </video>
+                </td>               
+            </tr>
+
+
+        </table>
+    </body>
+</html>

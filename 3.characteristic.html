@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"><title>profile</title>
+        <link href="https://fonts.googleapis.com/css2?family=Workbench&display=swap" rel="stylesheet">
+        <style>
+            body {
+                background-color: #5e91fe;
+                font-family: "Workbench", monospace;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+                font-variation-settings:
+                "BLED" 0,
+                "SCAN" 0;
+            }
+            nav {
+                position: fixed;
+                display: flex;
+                align-items: center;
+                padding: 10px 30px;
+                background-color: #5e91fe;
+                width: 100%;
+                top:0;
+            }
+            nav .logo img {
+                width: 70px; 
+                height: auto; 
+                margin-right: 370px; 
+            }
+            .logo:hover{
+                transform: scale(0.95);
+                transition:0.5s;
+            }
+
+            nav ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 25px 0px;
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+            }
+
+            nav li a {
+                text-decoration: none;
+                color: aliceblue;
+                font-size: 18px;
+                padding: 10px;
+            }
+
+            .menu_2:hover{color:#50d03a}
+            .menu_3:hover{color:#e7230d}
+            .menu_4:hover{color:#00b7ff}
+            .menu_5:hover{color:#fccd0e}
+            
+            .block {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: auto;
+                z-index: -1; 
+            }
+            h1 {text-align: center; margin-top: 130px;}
+            tr td img{
+                width: 170px;
+            }
+            table {
+                margin-top: 70px;
+                margin:auto
+            }
+            td{text-align: center;
+                padding: 50px;}
+            p{text-align: center; color:aliceblue}
+            </style>
+    </head>
+
+    <body>
+         <nav>
+            <a href="1.index.html" class="logo">
+                <img src="images/Introduce me!.svg" alt="Home" />
+            </a>
+          <ul>
+            <li><a class="menu_2" href="2.profile.html">Lv.1 Profile</a></li>
+            <li><a class="menu_3" href="3.characteristic.html">Lv.2 Characteristic</a></li>
+            <li><a class="menu_4" href="4.playlist.html">Lv.3 Playlist</a></li>
+            <li><a class="menu_5" href="5.letter.html">Lv.4 Letter</a></li>
+          </ul>
+        </nav>
+        <img src="images/block.png" alt="block" class="block"/>
+
+        <br> <h1>Characteristic</h1> <br><br>
+
+        <table>
+            <tr>
+                <td><a class="Q.1" href="links/Q.1.html"><img src="Images/Q.svg"></a></td>
+                <td><a class="Q.1" href="links/Q.2.html"><img src="Images/Q.svg"></a></td>
+                <td><a class="Q.1" href="links/Q.3.html"><img src="Images/Q.svg"></a></td>
+            </tr>
+        </table>
+        <p>Click on "?" to learn more about me</p>
+        
+    </body>
+</html>
